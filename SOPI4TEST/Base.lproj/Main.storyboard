@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,76 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPI4TEST" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="KPa-o4-HCC">
+                                <rect key="frame" x="20" y="20" width="280" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="169" id="dey-s1-kvX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbO-2V-W6k">
+                                <rect key="frame" x="99" y="280" width="108" height="56"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5to-ii-Jhg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <state key="normal" title="Skicka">
+                                    <color key="titleColor" red="0.0" green="0.56904578210000001" blue="0.6133724297571429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Skickabuttom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uU7-eX-VnS"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Första Namn" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="RB6-fr-oUT">
+                                <rect key="frame" x="-7" y="232" width="320" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="tlh-eJ-kqG"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skriv ditt Första Namn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYH-Xa-uir">
+                                <rect key="frame" x="0.0" y="195" width="320" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KPa-o4-HCC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0a5-Xk-f6m"/>
+                            <constraint firstItem="RB6-fr-oUT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-23" id="1Jf-t4-66u"/>
+                            <constraint firstItem="dYH-Xa-uir" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1pE-jq-ydz"/>
+                            <constraint firstItem="gbO-2V-W6k" firstAttribute="top" secondItem="RB6-fr-oUT" secondAttribute="bottom" constant="8" symbolic="YES" id="E45-sh-bO0"/>
+                            <constraint firstItem="dYH-Xa-uir" firstAttribute="centerX" secondItem="KPa-o4-HCC" secondAttribute="centerX" id="GM2-m6-efA"/>
+                            <constraint firstItem="RB6-fr-oUT" firstAttribute="top" secondItem="dYH-Xa-uir" secondAttribute="bottom" constant="8" symbolic="YES" id="Rco-NN-KRy"/>
+                            <constraint firstItem="RB6-fr-oUT" firstAttribute="top" secondItem="KPa-o4-HCC" secondAttribute="bottom" constant="43" id="U2k-fG-xVg"/>
+                            <constraint firstItem="KPa-o4-HCC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VRE-BP-J17"/>
+                            <constraint firstAttribute="trailing" secondItem="dYH-Xa-uir" secondAttribute="trailing" id="XOb-is-BuT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RB6-fr-oUT" secondAttribute="trailing" constant="7" id="dap-FO-Wzh"/>
+                            <constraint firstItem="gbO-2V-W6k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="eO3-Br-Qv3"/>
+                            <constraint firstItem="gbO-2V-W6k" firstAttribute="centerX" secondItem="RB6-fr-oUT" secondAttribute="centerX" id="gwY-uB-Fzi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="CaregiveName" destination="RB6-fr-oUT" id="Yjm-km-eSJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bigicon.png" width="1449" height="2048"/>
+    </resources>
 </document>

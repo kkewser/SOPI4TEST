@@ -18,6 +18,7 @@
 		B9454816209892460047A2FF /* SOPI4TESTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454815209892460047A2FF /* SOPI4TESTTests.swift */; };
 		B9454821209892460047A2FF /* SOPI4TESTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9454820209892460047A2FF /* SOPI4TESTUITests.swift */; };
 		B945482F209894230047A2FF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B945482E209894220047A2FF /* GoogleService-Info.plist */; };
+		B94548332098A1150047A2FF /* bigicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B94548322098A1150047A2FF /* bigicon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B9454820209892460047A2FF /* SOPI4TESTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOPI4TESTUITests.swift; sourceTree = "<group>"; };
 		B9454822209892460047A2FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B945482E209894220047A2FF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B94548322098A1150047A2FF /* bigicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigicon.png; sourceTree = "<group>"; };
 		C25F3E38FDAE4F7522789D48 /* Pods-SOPI4TESTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPI4TESTTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SOPI4TESTTests/Pods-SOPI4TESTTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBBC8BA04E6571B9F7C31142 /* Pods_SOPI4TEST.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SOPI4TEST.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B819733548AE975AF304A9 /* Pods-SOPI4TESTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SOPI4TESTUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SOPI4TESTUITests/Pods-SOPI4TESTUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		B94547FF209892420047A2FF /* SOPI4TEST */ = {
 			isa = PBXGroup;
 			children = (
+				B94548322098A1150047A2FF /* bigicon.png */,
 				B945482E209894220047A2FF /* GoogleService-Info.plist */,
 				B9454800209892420047A2FF /* AppDelegate.swift */,
 				B9454802209892420047A2FF /* ViewController.swift */,
@@ -278,6 +281,7 @@
 			files = (
 				B945480B209892460047A2FF /* LaunchScreen.storyboard in Resources */,
 				B945482F209894230047A2FF /* GoogleService-Info.plist in Resources */,
+				B94548332098A1150047A2FF /* bigicon.png in Resources */,
 				B9454808209892460047A2FF /* Assets.xcassets in Resources */,
 				B9454806209892420047A2FF /* Main.storyboard in Resources */,
 			);
@@ -563,7 +567,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4524XJ5F23;
 				INFOPLIST_FILE = SOPI4TEST/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kewser.SOPI4TEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -579,7 +586,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4524XJ5F23;
 				INFOPLIST_FILE = SOPI4TEST/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kewser.SOPI4TEST;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -595,7 +605,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SOPI4TESTTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kewser.SOPI4TESTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -612,7 +626,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SOPI4TESTTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kewser.SOPI4TESTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -628,7 +646,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SOPI4TESTUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kewser.SOPI4TESTUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -644,7 +666,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SOPI4TESTUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Kewser.SOPI4TESTUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
