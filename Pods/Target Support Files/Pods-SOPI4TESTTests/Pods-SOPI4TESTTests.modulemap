@@ -1,0 +1,6 @@
+framework module Pods_SOPI4TESTTests {
+  umbrella header "Pods-SOPI4TESTTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
